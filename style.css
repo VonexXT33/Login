@@ -1,0 +1,143 @@
+/* ===========================
+   DevVonexXT - Login Style
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-secondary: #8b949e;
+    --primary: #58a6ff;
+    --primary-hover: #79c0ff;
+}
+
+body{
+    font-family: "Fira Code", monospace;
+    background: var(--background);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card */
+
+.login-card{
+    width: 380px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0,0,0,.35);
+}
+
+/* Título */
+
+.login-card h1{
+    color: var(--primary);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.login-card p{
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 35px;
+}
+
+/* Form */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 8px;
+    font-size: .9rem;
+    color: var(--text);
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #0d1117;
+    color: white;
+    outline: none;
+    font-family: inherit;
+    transition: .25s;
+}
+
+input::placeholder{
+    color: #6e7681;
+}
+
+input:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 12px rgba(88,166,255,.25);
+}
+
+/* Botão */
+
+button{
+    padding: 14px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .25s;
+}
+
+button:hover{
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Rodapé */
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: .85rem;
+}
+
+footer strong{
+    color: var(--primary);
+}
+
+/* Responsivo */
+
+@media (max-width: 430px){
+
+    .login-card{
+        width: 100%;
+        padding: 30px;
+    }
+
+}
